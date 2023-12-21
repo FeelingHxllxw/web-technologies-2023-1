@@ -57,7 +57,7 @@ function GetIndex(nums, target) {
   for (let i = 0; i < nums.length; i++) {
     let pair = [];
     const temp = nums[i];
-    for (let j = 0; j < nums.length; j++) {
+    for (let j = i + 1; j < nums.length; j++) {
       if (i < j && temp + nums[j] == target) {
         pair.push(i);
         pair.push(j);
