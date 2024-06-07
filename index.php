@@ -17,12 +17,71 @@ $result1 = calculate($a, $b);
 echo ("<p><b>Задание 1</b></p>" . "<p>Результат = " . $result1 . "</p>");
 
 //Задание 2
+// Со switch
+echo ("<p><b>Задание 2 со switch</b></p>");
+$a = rand(0, 15);
+
+echo "<p>Значение переменной \$a: $a</p>";
+echo "<p>Числа от \$a до 15:</p>";
+
+// Используем оператор switch для вывода чисел от $a до 15
+switch ($a) {
+    case 0:
+        echo "0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15";
+        break;
+    case 1:
+        echo "1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15";
+        break;
+    case 2:
+        echo "2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15";
+        break;
+    case 3:
+        echo "3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15";
+        break;
+    case 4:
+        echo "4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15";
+        break;
+    case 5:
+        echo "5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15";
+        break;
+    case 6:
+        echo "6, 7, 8, 9, 10, 11, 12, 13, 14, 15";
+        break;
+    case 7:
+        echo "7, 8, 9, 10, 11, 12, 13, 14, 15";
+        break;
+    case 8:
+        echo "8, 9, 10, 11, 12, 13, 14, 15";
+        break;
+    case 9:
+        echo "9, 10, 11, 12, 13, 14, 15";
+        break;
+    case 10:
+        echo "10, 11, 12, 13, 14, 15";
+        break;
+    case 11:
+        echo "11, 12, 13, 14, 15";
+        break;
+    case 12:
+        echo "12, 13, 14, 15";
+        break;
+    case 13:
+        echo "13, 14, 15";
+        break;
+    case 14:
+        echo "14, 15";
+        break;
+    case 15:
+        echo "15";
+        break;
+}
+// Без switch
 $result2 = "";
 for ($i = $a; $i <= 15; $i++) {
     $result2 .= $i . ", ";
 }
 $result2 = rtrim($result2, ", ");
-echo ("<p><b>Задание 2</b></p>" . "<p>Результат = " . $result2 . "</p>");
+echo ("<p><b>Задание 2 , без switch</b></p>" . "<p>Результат = " . $result2 . "</p>");
 
 //Задание 3
 function summ($a, $b) {
